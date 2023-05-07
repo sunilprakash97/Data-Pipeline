@@ -5,13 +5,16 @@ In this Repository, 3 things are shown:
 
 API Endpoint template:
 POST: http://0.0.0.0:8000/
+
+
+
 Json format 
 {
     "vol_moving_avg": "48945",
     "adj_close_rolling_med": 35
 }
 
-By default Running the docker container exposes the API endpoint based on the previous trained model.
+By default, the API endpoint is exposed based on the trained model of the docker container.
 1. To download & convert csv files to parquet   - python script_1.py
 2. To build a machine learning model            - python script_2.py
 3. Sample Automation                            - python sample_automation.py
