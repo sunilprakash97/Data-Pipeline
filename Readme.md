@@ -23,5 +23,7 @@ Docker Commands:
 1. docker-compose build
 2. docker-compose up -d
 
+Activate Virtual Environment: source venv/bin/activate
+
 Architecture of this whole data pipeline
 ![alt text](https://github.com/sunilprakash97/Data-Pipeline/blob/main/Flowchart.png)
