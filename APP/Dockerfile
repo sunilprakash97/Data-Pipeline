@@ -30,10 +30,10 @@ ENV PYSPARK_PYTHON=python3
 ENV SPARK_HOME=/spark
 
 # Download and extract Spark
-RUN curl -O https://archive.apache.org/dist/spark/spark-3.2.0/spark-3.2.0-bin-hadoop3.2.tgz && \
-    tar -xzf spark-3.2.0-bin-hadoop3.2.tgz && \
-    mv spark-3.2.0-bin-hadoop3.2 /spark && \
-    rm spark-3.2.0-bin-hadoop3.2.tgz
+RUN curl -O https://downloads.apache.org/spark/spark-3.4.0/spark-3.4.0-bin-hadoop3.tgz && \
+    tar -xzf spark-3.4.0-bin-hadoop3.tgz && \
+    mv spark-3.4.0-bin-hadoop3 /spark && \
+    rm spark-3.4.0-bin-hadoop3.tgz
 
 # Set the PATH environment variable to include Spark and Scala binaries
 ENV PATH $PATH:$SPARK_HOME/bin:$SCALA_HOME/bin
